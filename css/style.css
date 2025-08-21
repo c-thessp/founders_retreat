@@ -1052,9 +1052,12 @@ p {
     opacity: 0.95;
 }
 
-.questionnaire-form {
-    padding: 4rem 0 6rem;
-    background: #f8fafc;
+.questionnaire-form .form-section {
+    margin-bottom: 2rem;   /* consistent spacing for all sections */
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fff;
 }
 
 .founders-form {
