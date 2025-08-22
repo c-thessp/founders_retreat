@@ -1,0 +1,162 @@
+<!-- =========================
+     SOUL SISTER RETREAT: PRICING WIREFRAME
+     Drop this block into your funnel page.
+     ========================= -->
+
+<style>
+  :root{
+    --bg:#fff;
+    --ink:#1e2233;
+    --muted:#677089;
+    --brand:#e85aa0; /* flamingo pink accent */
+    --brand-ink:#fff;
+    --card:#ffffff;
+    --ring:#f0f2f7;
+  }
+  .ss-wrap{max-width:1100px;margin:0 auto;padding:32px 20px;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);}
+  .ss-center{text-align:center}
+  .ss-hero h1{font-size:clamp(28px,4vw,40px);margin:0 0 8px}
+  .ss-hero p{color:var(--muted);margin:0 0 18px}
+  .ss-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+  .btn{display:inline-block;padding:12px 16px;border-radius:10px;border:1px solid var(--brand);color:var(--brand);text-decoration:none;font-weight:600}
+  .btn:hover{background:rgba(232,90,160,.08)}
+  .btn-primary{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+  .btn-primary:hover{filter:brightness(.96)}
+  .btn-ghost{border-color:transparent;color:var(--muted)}
+  .ss-steps{margin:24px auto 10px;max-width:820px}
+  .ss-steps ol{padding-left:18px;color:var(--muted);line-height:1.5}
+  .ss-grid{display:grid;gap:16px;margin:22px 0}
+  .ss-grid.cols-4{grid-template-columns:repeat(4,1fr)}
+  .ss-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+  @media (max-width:980px){.ss-grid.cols-4,.ss-grid.cols-3{grid-template-columns:1fr 1fr}}
+  @media (max-width:640px){.ss-grid.cols-4,.ss-grid.cols-3{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--ring);border-radius:14px;padding:18px 16px;box-shadow:0 8px 28px rgba(20,20,43,.06);display:flex;flex-direction:column;gap:12px}
+  .card h3,.card h4{margin:0}
+  .card p{margin:0;color:var(--muted)}
+  .btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+  small, .fine{color:var(--muted)}
+  .faq details{border:1px solid var(--ring);border-radius:10px;padding:10px 12px;margin:8px 0;background:#fff}
+  .faq summary{cursor:pointer;font-weight:600}
+  .divider{height:1px;background:var(--ring);margin:24px 0}
+</style>
+
+<section class="ss-wrap ss-hero ss-center">
+  <h1>Commissioned to Be Seen — Oct 5–10 • Lubbock, TX</h1>
+  <p>Choose your experience. Reserve with a $150 deposit. We’ll set your plan.</p>
+  <div class="ss-actions">
+    <!-- Optional: one master link to your Stripe Hosted Pricing Table -->
+    <a class="btn btn-primary" href="YOUR_PRICING_TABLE_URL" target="_blank" rel="noopener">See All Options & Checkout</a>
+    <a class="btn btn-ghost" href="mailto:hello@soulsisterproject.com">Questions?</a>
+  </div>
+</section>
+
+<section class="ss-wrap ss-steps">
+  <ol>
+    <li>Choose your experience (Full • Day • Evening • Thursday).</li>
+    <li>Pay-in-Full or reserve your spot with a $150 deposit (Founder’s Circle only).</li>
+    <li>Watch for your confirmation email and balance plan.</li>
+  </ol>
+</section>
+
+<section class="ss-wrap">
+  <!-- STEP 1: EXPERIENCE CARDS -->
+  <div class="ss-grid cols-4">
+    <!-- Card: Founder's Circle -->
+    <article class="card">
+      <h3>Founder’s Circle (Full Retreat)</h3>
+      <p>Lodging + all sessions. Choose your bed, then Pay-in-Full or reserve with a $150 deposit.</p>
+      <div class="btn-row">
+        <a class="btn" href="#founders-beds">Bed-to-Self</a>
+        <a class="btn" href="#founders-beds">Sister-Share</a>
+        <a class="btn" href="#founders-beds">Bunk Single</a>
+      </div>
+    </article>
+
+    <!-- Card: Day Pass -->
+    <article class="card">
+      <h3>Day Pass (All 3 Days)</h3>
+      <p>Daytime devotionals, teachings, workshops, and lunch each day.</p>
+      <a class="btn btn-primary" href="https://buy.stripe.com/YOUR-DAYPASS" target="_blank" rel="noopener">Day Pass — $397</a>
+    </article>
+
+    <!-- Card: Evening Pass -->
+    <article class="card">
+      <h3>Evening Pass</h3>
+      <p>Dinner, story circles, worship, prophetic flow.</p>
+      <div class="btn-row">
+        <a class="btn" href="https://buy.stripe.com/YOUR-EVENING-PER-NIGHT" target="_blank" rel="noopener">Per Night — $47</a>
+        <a class="btn" href="https://buy.stripe.com/YOUR-EVENING-BUNDLE" target="_blank" rel="noopener">All Evenings — $147</a>
+      </div>
+      <small>Per-Night checkout includes a field to list your dates.</small>
+    </article>
+
+    <!-- Card: Thursday Upgrade -->
+    <article class="card">
+      <h3>Thursday Overflow</h3>
+      <p>Spiritual exhale + gentle guided setup of your 90-day AI system.</p>
+      <a class="btn btn-primary" href="https://buy.stripe.com/YOUR-THURSDAY" target="_blank" rel="noopener">Thursday — $497</a>
+    </article>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- STEP 2: FOUNDER'S BEDS & PAYMENT -->
+  <div id="founders-beds" class="ss-grid cols-3">
+    <!-- Bed-to-Self -->
+    <article class="card">
+      <h4>Bed-to-Self</h4>
+      <p><strong>$777</strong> Pay-in-Full or <strong>$150</strong> Deposit</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://buy.stripe.com/YOUR-BEDSELF-PIF" target="_blank" rel="noopener">Pay-in-Full — $777</a>
+        <a class="btn" href="https://buy.stripe.com/YOUR-BEDSELF-DEP" target="_blank" rel="noopener">Reserve — $150</a>
+      </div>
+      <small class="fine">Deposit is non-refundable. 2-pay/3-pay balances complete ≥30 days before retreat.</small>
+    </article>
+
+    <!-- Sister-Share -->
+    <article class="card">
+      <h4>Sister-Share</h4>
+      <p><strong>$597</strong> Pay-in-Full or <strong>$150</strong> Deposit</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://buy.stripe.com/YOUR-SHARE-PIF" target="_blank" rel="noopener">Pay-in-Full — $597</a>
+        <!-- Add custom field “Roommate Name” to this Payment Link in Stripe -->
+        <a class="btn" href="https://buy.stripe.com/YOUR-SHARE-DEP" target="_blank" rel="noopener">Reserve — $150</a>
+      </div>
+      <small class="fine">Include roommate name at checkout or we’ll pair you thoughtfully.</small>
+    </article>
+
+    <!-- Bunk Single -->
+    <article class="card">
+      <h4>Bunk Single</h4>
+      <p><strong>$497</strong> Pay-in-Full or <strong>$150</strong> Deposit</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://buy.stripe.com/YOUR-BUNK-PIF" target="_blank" rel="noopener">Pay-in-Full — $497</a>
+        <a class="btn" href="https://buy.stripe.com/YOUR-BUNK-DEP" target="_blank" rel="noopener">Reserve — $150</a>
+      </div>
+      <small class="fine">Deposit is non-refundable. Balances due ≥30 days prior.</small>
+    </article>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h3>FAQ</h3>
+    <details>
+      <summary>Can I reserve with a deposit?</summary>
+      <p>Yes. Reserve with a $150 non-refundable deposit for Founder’s Circle. We’ll set a 2-pay or 3-pay plan so your balance completes ≥30 days before the retreat.</p>
+    </details>
+    <details>
+      <summary>How do evening nights work?</summary>
+      <p>Use the Per-Night link, select quantity (up to 5), and enter your dates in the checkout field.</p>
+    </details>
+    <details>
+      <summary>What happens after I pay?</summary>
+      <p>You’ll receive a confirmation email and logistics. Deposit orders also receive balance plan details.</p>
+    </details>
+  </section>
+
+  <div class="ss-center" style="margin-top:18px">
+    <a class="btn btn-primary" href="YOUR_PRICING_TABLE_URL" target="_blank" rel="noopener">See All Options & Checkout</a>
+  </div>
+</section>
